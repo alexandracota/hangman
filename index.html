@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="custom.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Trocchi" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Hangman with Trendy Dachshunds</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+			  <h1>Hangman<br>(with Trendy Dachshunds)</h1>
+			  <p>An interactive javaScript game by Alex Cota</p>
+			</div>
+		</div>
+		</div>
+		<!-- Images of Dachsunds -->
+		<div class="row">
+			<div class="col-md-3">
+		    	<a href="#" class="thumbnail">
+		      	<img src="assets/sun-hat.jpg" alt="Coachella Dachshund">
+		    	</a>
+		  	</div>
+		  	<div class="col-md-3">
+		    	<a href="#" class="thumbnail">
+		      	<img src="assets/dachshund-jacket.jpg" alt="Dachshund in Winter Apparel">
+		    	</a>
+		  	</div>
+		  	<div class="col-md-3">
+		    	<a href="#" class="thumbnail">
+		      	<img src="assets/2star-weenies.jpg" alt="Sun Hat Image">
+		    	</a>
+		  	</div>
+		  	<div class="col-md-3">
+		    	<a href="#" class="thumbnail">
+		      	<img src="assets/red-striped-sweater.jpg" alt="Sun Hat Image">
+		    	</a>
+		  	</div>
+		</div>
+
+
+		<hr>
+		<!-- Interactive hangman image. -->
+			<div class="row">
+				
+				<div class="col-md-6 hangman-drawing">
+					<canvas id="myCanvas"></canvas>
+				</div>
+				
+				<!-- Letters, blanks, and button. -->
+				<div class="col-md-6">
+					<div class="row">
+						<div id="unguessed-letters"></div>
+					</div>
+					<div class="row">
+						<div id="word-container" class="hidden-container">
+							<p class="letter"></p>
+						</div>
+					</div>
+					<div class="row">
+						<div id="incorrect-guesses">
+							<h3>Incorrect Guesses: </h3>
+						</div>
+					</div>
+					<div class="row">
+						<button type="button" class="btn btn-default btn-lg" id="button">
+						Click to play!
+						</button>
+					</div>
+				</div>
+
+			</div>
+		
+
+	</div>
+
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillRect(0,0,150,75);
+
+
+		</script>
+
+
+	
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	background-image: url(assets/cheap_diagonal_fabric/cheap_diagonal_fabric.png);
+	background-color: black;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-family: 'Trocchi', serif;
+	}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+}
+
+#myCanvas {
+	height: 800px;
+	width: initial;
+	margin: 0 auto;
+}
+
+#button {
+	background-color: black;
+	color: white;
+
+}
